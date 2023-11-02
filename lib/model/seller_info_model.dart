@@ -13,6 +13,18 @@ class SellerInfoModel {
     this.email,
   });
 
+  dynamic phoneNumber;
+  String? companyName;
+  String? pictureUrl;
+  String? businessCategory;
+  String? language;
+  String? countryName;
+  String? userID;
+  String? subscriptionName;
+  String? subscriptionDate;
+  String? subscriptionMethod;
+  String? email;
+
   SellerInfoModel.fromJson(dynamic json) {
     phoneNumber = json['phoneNumber'];
     companyName = json['companyName'];
@@ -26,18 +38,6 @@ class SellerInfoModel {
     subscriptionMethod = json['subscriptionMethod'];
     email = json['email'];
   }
-  dynamic phoneNumber;
-  String? companyName;
-  String? pictureUrl;
-  String? businessCategory;
-  String? language;
-  String? countryName;
-  String? userID;
-  String? subscriptionName;
-  String? subscriptionDate;
-  String? subscriptionMethod;
-  String? email;
-
   Map<String, dynamic> toJson() {
     final map = <String, dynamic>{};
     map['phoneNumber'] = phoneNumber;
